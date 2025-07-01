@@ -1,0 +1,391 @@
+/* Section 5 Styles */
+.section-5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-5-no-padding {
+    padding: 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+    width: 1364px;
+    height: 650px;
+  }
+  .section-5-title-wrapper{
+    height: 40px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+
+  .section-5-subtitle-white {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    height: 16;
+    margin-left: 70px;
+  }
+  .section-5-title-horizontal-line{
+    width: 75%;
+    height: 1px;
+    background-color:rgba(192, 192, 211, 0.45);
+  }
+  .section-5-grid-wrapper {
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  
+  .section-5-vacations-tab-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 42px;
+    position: relative;
+    border-bottom: none;
+  }
+  
+  .section-5-vacations-tab-link {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #081c3a;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* .section-5-vacations-tab-link.w--current {
+    color: #081c3a;
+  } */
+
+  .section-5-membership-dot.active-dot {
+    background-color: #081c3a; /* Dark color for active/previous dots */
+  }
+  
+  .section-5-membership-circle {
+    position: absolute;
+    top: 76px;
+    z-index: 2;
+  }
+  
+  .section-5-membership-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* .section-5-vacations-tab-link.w--current .section-5-membership-dot {
+    background-color: #000;
+  } */
+  
+  .section-5-membership-outline-circle {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease-in-out;
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  .section-5-vacations-tab-link.w--current .section-5-membership-outline-circle {
+    transform: translate(-50%, -50%) scale(2);
+  }
+  
+  .section-5-location-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e6e6f3;
+    z-index: 0;
+  }
+  
+  .section-5-location-indicator-fill {
+    height: 100%;
+    width: 25%;
+    background-color: #000;
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+  
+  .section-5-vacations-tabs-content {
+    margin-top: 60px;
+
+  }
+  
+  .section-5-w-tab-pane {
+    display: none;
+  }
+  
+  .section-5-w-tab-pane.w--tab-active {
+    display: block;
+  }
+  
+  .section-5-popular-vacations-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .section-5-card-wrapper {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 14px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, opacity 2s ease;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  .section-5-card-wrapper.visible {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.3s;
+  }
+  
+  .section-5-card-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-5-vacations-verticle-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .section-5-verticle-card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .section-5-hero-background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section-5-vacation-card-bottom {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .section-5-vacation-card-bottom h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #081c3a;
+  }
+  
+  .section-5-vacation-card-bottom p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .section-5-outline-button {
+    padding: 6px 14px;
+    border: 1px solid #081c3a;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #081c3a;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .section-5-outline-button:hover {
+    background-color: #081c3a;
+    color: #fff;
+  }
+
+/* Section 6 Styles */
+.section-6-no-padding {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-6-grid-wrapper {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px; /* Ensure the section has enough height to display the background */
+}
+
+/* Background and Overlay */
+.section-6-grey-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section-6-paralax-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/607dcd2961c3e396968aac28_031.jpeg'); /* Placeholder tropical image */
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 24px, 0px) scale3d(1.05, 1.05, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); /* Moved from inline style */
+}
+
+.section-6-overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    z-index: 1;
+}
+
+/* Section Intro */
+.section-6-intro {
+    height: 243px;
+    width: 1000px;
+    position: relative;
+    z-index: 2; /* Ensure content is above the background and overlay */
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.section-6-promise-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Subtitle */
+.section-6-subtitle-wrapper {
+    margin-bottom: 10px;
+}
+
+.section-6-subtitle{
+     font-size: 11px;
+     letter-spacing: 5px;
+
+}
+
+.section-6-subtitle-2 {
+    display: block;
+    width: 800px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e6e6f3; /* Light color for subtitle */
+}
+
+/* Heading */
+.section-6-promise-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0;
+}
+
+/* Buttons */
+.section-6-dual-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.section-6-button-white {
+    height: 54px;
+    width: 178px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #081c3a;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); /* Moved from inline style */
+}
+
+.section-6-button-white:hover {
+    background-color: #e6e6f3;
+    color: #081c3a;
+}
+
+.section-6-outline-button-white {
+    height: 54px;
+    width: 178px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    border: 1px solid #c3c3c3;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); /* Moved from inline style */
+}
+
+.section-6-outline-button-white:hover {
+    background-color: #fff;
+    color: #081c3a;
+}
+

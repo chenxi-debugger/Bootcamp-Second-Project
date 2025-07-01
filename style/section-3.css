@@ -1,0 +1,404 @@
+.section-3 {
+    padding: 60px 20px;
+    background-color: rgb(247, 248, 252);
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: rgb(8, 28, 58);
+    
+  }
+  
+  .section-3-grid-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  /* Intro Section */
+  .section-3-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+  }
+  
+  .section-3-text {
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-3-subtitle-wrapper{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-3-subtitle {
+    display: inline-block;
+    height: 40px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .section-3-benefits-horizontal-line{
+    margin-top: 4px;
+    width: 85%;
+    height: 1px;
+    background-color: #e6e6f3;
+  }
+  
+  .section-3-maintitle {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .section-3-text p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  
+  /* Dropdown Button */
+  /* === Dropdown Wrapper === */
+  .section-3-dropdown {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+  }
+  
+  /* === Dropdown Button === */
+  .section-3-dropbtn {
+      color: white;
+      height: 28px;
+      line-height: 30px;
+      width: 230px;
+      background-color: rgb(53, 114, 255);
+      padding: 12px 24px 12px 40px;
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      white-space: normal;
+      text-transform: uppercase;
+  }
+  
+  /* Hover state */
+  .section-3-dropbtn:hover {
+    background-color: rgb(8, 28, 58);
+  }
+  
+  /* Open state — when dropdown is active */
+  .section-3-dropdown.section-3-active .section-3-dropbtn {
+    background-color: rgb(8, 28, 58);
+  }
+  
+  /* === Dropdown Panel === */
+  .section-3-dropdown-content {
+      height: 290px;
+      width: 500px;
+      border-radius: 12px;
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      padding: 20px;
+      top: 65px;
+      left: 0;
+  }
+  
+  
+  /* === Title and Divider === */
+  .section-3-subtitle-intro-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+  }
+  
+  .section-3-dropbtn-subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      white-space: nowrap;
+  }
+  
+  .section-3-dropdownhorizontal-line {
+      background-color: #e0e0e0;
+      width: 100%;
+      height: 1px;
+  }
+  
+  /* === Dropdown Grid === */
+  .section-3-dropdown-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+  
+  /* === Dropdown Item === */
+  .section-3-dropdown-item {
+      height: 80px;
+      width: 200px;
+      border: 1px solid #f0f0f0;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 20px;
+  }
+  
+  /* Text content */
+  .section-3-dropdown-location {
+      font-size: 18px;
+      font-weight: 600;
+      color: #081c3a;
+      z-index: 1;
+      transition: color 0.3s ease;
+  }
+  
+  .section-3-dropdown-subtitle {
+      font-size: 12px;
+      text-transform: uppercase;
+      z-index: 1;
+      transition: color 0.3s ease;
+  }
+
+  .section-3-dropdown-item:hover .section-3-dropdown-location, .section-3-dropdown-item:hover .section-3-dropdown-subtitle{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+  
+  /* === Background Image === */
+  .section-3-location-card-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 0;
+      transform: scale(1);
+      border-radius: 10px;
+  }
+  
+  .section-3-dropdown-item:hover .section-3-location-card-background {
+      opacity: 0.9;
+      transform: scale(1.05);
+  }
+  
+  /* Background image assignments */
+  .section-3-dropdown-grid .section-3-dropdown-item:nth-child(1) .section-3-location-card-background {
+      background-image: url('../image/607dcd1ef1d9b0b767714525_001.jpeg');
+  }
+  
+  .section-3-dropdown-grid .section-3-dropdown-item:nth-child(2) .section-3-location-card-background {
+      background-image: url('../image/607dcd2961c3e396968aac28_031.jpeg');
+  }
+  
+  .section-3-dropdown-grid .section-3-dropdown-item:nth-child(3) .section-3-location-card-background {
+      background-image: url('../image/home-hero-background.jpeg');
+  }
+  
+  .section-3-dropdown-grid .section-3-dropdown-item:nth-child(4) .section-3-location-card-background {
+      background-image: url('../image/607dd011e021d45c28b27a10_021.jpeg');
+  }
+  
+  /* === Arrow Icon === */
+  .section-3-card-arrow-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%) translateX(-10px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      z-index: 1;
+  }
+  
+  .section-3-dropdown-item:hover .section-3-card-arrow-icon {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+  }
+  
+  .section-3-vacation-card-arrow {
+      width: 24px;
+      height: 24px;
+      transition: filter 0.3s ease;
+  }
+  
+  .section-3-dropdown-item:hover .section-3-vacation-card-arrow {
+      filter: brightness(0) invert(1); /* Make it white */
+  }
+  
+  /* === Hover text color === */
+  .section-3-dropdown-item:hover .section-3-dropdown-location,
+  .section-3-dropdown-item:hover .section-3-dropdown-subtitle {
+      color: #fff;
+  }
+  
+  .section-3-dropdown.section-3-active .section-3-dropdown-content {
+      display: block;}
+  
+  /* Image */
+  .section-3-image {
+    width: 346px;
+    background-image: url('../image/6075041a5cc5c760b623c7e7_Travel004.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    height: 437px;
+  }
+  .section-3-image-wrapper {
+    width: 55%;
+    position: relative;
+    margin-right: -50px;
+  }
+  
+  .section-3-image {
+    width: 100%;
+    height: 437px;
+    background-image: url('../image/6075041a5cc5c760b623c7e7_Travel004.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Overlays */
+  .section-3-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: 2;
+    transition: transform 1.2s ease;
+  }
+  
+  /* Initial state */
+  .section-3-image-overlay.top {
+    top: 0;
+    transform: translateY(0%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .section-3-image-overlay.bottom {
+    bottom: 0;
+    transform: translateY(0%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  /* Animate open */
+  .section-3-image.revealed .section-3-image-overlay.top {
+    transform: translateY(-100%);
+  }
+  
+  .section-3-image.revealed .section-3-image-overlay.bottom {
+    transform: translateY(100%);
+  }
+  
+  
+  /* Benefits Section */
+  .section-3-benefits {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+
+  }
+  
+  .section-3-benefits .section-3-subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .section-3-benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .section-3-benefit-card {
+    height: 200px;
+    width: 240px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align:left;
+    transition: transform 0.3s;
+  }
+  
+  .section-3-benefit-card:hover {
+      transform: scale(1.1);
+      transition: transform 0.5s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-3-benefit-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .section-3-benefit-card h3 {
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a3c5e;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 60px;
+  }
+  
+  .section-3-benefit-card p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 20px;
+  }
+  
+  /* Responsive (Optional) */
+  @media (max-width: 768px) {
+    .section-3-intro {
+      flex-direction: column;
+    }
+  
+    .section-3-text,
+    .section-3-image {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .section-3-benefit-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-3-benefit-cards {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,178 @@
+
+.section-4-testimonial-section {
+    position: relative;
+    padding: 180px 80px;
+    height: 400px;
+    width: 100wv;
+    z-index: 1;
+}
+
+.section-4-grid-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-4-testimonial-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.section-4-testimonial-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-4-testimonial-tracker {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    position: absolute;
+    left: 1px; /* Position on the left side */
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 5px; /* Space between tracker items */
+}
+
+.section-4-tracker-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    width: 50px; /* Box size */
+    height: 50px;
+    border: 1px solid transparent; /* Default border, invisible */
+    border-left: 4px solid transparent; /* Left border for active state */
+    transition: border-left-color 0.3s ease, font-weight 0.3s ease;
+    cursor: pointer; /* Make clickable */
+}
+
+.section-4-tracker-item.active {
+    font-weight: bold; /* Bold the active number */
+    border-left-color: #fff; /* White left border for active state */
+}
+
+.section-4-tracker-fill {
+    display: none; /* Remove the fill effect as per the design */
+}
+
+.section-4-testimonial-mask {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height to prevent layout shift during animation */
+}
+
+.section-4-testimonial-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Start invisible */
+    visibility: hidden; /* Start hidden */
+    transition: opacity 2s ease, visibility 2s ease; /* Slower transition for visibility */
+}
+
+.section-4-testimonial-slide.active {
+    opacity: 1; /* Become visible */
+    visibility: visible; /* Show the slide */
+}
+
+.section-4-testimonial-slide-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.section-4-testimonial-tracker.in-slider {
+    display: none; /* Hide the in-slider tracker as it's not needed per the design */
+}
+
+.section-4-testimonial-content {
+    width: 700px;
+    margin: 0 auto;
+    opacity: 0; /* Start invisible */
+    transform: scale(0.5); /* Start 50% smaller */
+    transition: opacity 2s ease, transform 2s ease; /* Slower 2-second transition */
+}
+
+.section-4-testimonial-content.visible {
+    opacity: 1; /* Become visible */
+    transform: scale(1); /* Scale to normal size */
+    transition-delay: 0.5s; /* Delay the animation by 0.5 seconds */
+}
+
+.section-4-testimonial-content.hidden {
+    opacity: 0; /* Become invisible */
+    transform: scale(0.5); /* Scale to 50% smaller */
+    transition-delay: 0s; /* No delay for hiding */
+}
+
+.section-4-body-display.large.white {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-4-testimonial-client {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.section-4-arrows-wrapper {
+    display: flex;
+    justify-content: center; /* Center the arrows horizontally */
+    gap: 15px; /* Space between arrows */
+}
+
+.section-4-testimonial-arrow {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-4-testimonial-arrow:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.1s ease-in;
+}
+
+.section-4-slider-arrow-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.section-4-background-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section-4-paralax-background {
+    width: 100%;
+    height: 800px;
+    background: url('../image/6074ef622e17622ba2a018a4_Villa0017.jpeg') center/cover no-repeat;
+    transform: scale(1.05);
+}
+
+.section-4-overlay.dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 19, 38, 0.55);
+}
