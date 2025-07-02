@@ -85,7 +85,8 @@
     background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns for 2x2 grid */
-    
+    padding: 20px 20px 40px 20px;
+    border-radius: 20px;
 }
 
 .section-9-team-card {
@@ -101,7 +102,7 @@
 
 .section-9-team-card:hover {
     transform: scale(1.05); /* Scale larger on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    
 }
 
 .section-9-team-image {
