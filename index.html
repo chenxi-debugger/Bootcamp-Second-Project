@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="./style/section-9.css">
     <link rel="stylesheet" href="./style/section-10.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .mySwipers {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="preloader">
@@ -768,91 +781,76 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- Image Gallery Section -->
-                <div class="section-8-about-images-wrapper">
-                    <div class="section-8-background-load-top"></div>
-                    <div class="section-8-background-load-bottom"></div>
-                    <div class="section-8-about-images">
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image one">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607b6af17c67770ae3de1541_Family001.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image two">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607b6c801c6cc62928080d5c_Family003.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image three">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607b6ccb8c09f127ee426222_Family004.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image four">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607b6d1847737e3cad7ace73_Family005.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image five">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607dcd6f4c797d614a152a89_Family0012.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-8-about-image-item">
-                            <div class="section-8-team-image-lightbox">
-                                <div class="section-8-team-background-image six">
-                                    <div class="section-8-overlay-extra-light"></div>
-                                </div>
-                                <div class="section-8-team-image-location">
-                                    <div class="section-8-team-location-icon">
-                                        <img src="./image/607b6e34994877bde5d7d81b_Family007.jpeg" loading="lazy" alt="View Icon">
-                                    </div>
-                                    <div class="section-8-subtitle">View image</div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </section>
+
+        <section class="swiper">
+            <div class="swiperImgs">
+                <div class="pic" data-index = '0'>
+                    <img class="img" src="./family-images/Family001.jpeg" alt="" data-index = '0'>
+                    <div class="imgIcon" data-index = '0'>
+                        <img src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="" data-index = '0'>
+                        <p data-index = '0'>CLICK</p>
                     </div>
+                </div>
+                <div class="pic" data-index = '1'>
+                    <img class="img" src="./family-images/Family002.jpeg" alt="" data-index = '1'>
+                    <div class="imgIcon" data-index = '1'>
+                        <img src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="" data-index = '1'>
+                        <p data-index = '1'>CLICK</p>
+                    </div>
+                </div>
+                <div class="pic" data-index = '2'>
+                    <img class="img" src="./family-images/Family003.jpeg" alt="" data-index = '2'>
+                    <div class="imgIcon" data-index = '2'>
+                        <img data-index = '2' src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="">
+                        <p data-index = '2'>CLICK</p>
+                    </div>
+                </div>
+                <div class="pic" data-index = '3'>
+                    <img class="img" src="./family-images/Family004.jpeg" alt="" data-index = '3'>
+                    <div class="imgIcon" data-index = '3'>
+                        <img src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="" data-index = '3'>
+                        <p data-index = '3'>CLICK</p>
+                    </div>
+                </div>
+                <div class="pic" data-index = '4'>
+                    <img class="img" src="./family-images/Family005.jpeg" alt="" data-index = '4'>
+                    <div class="imgIcon" data-index = '4'>
+                        <img src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="" data-index = '4'>
+                        <p data-index = '4'>CLICK</p>
+                    </div>
+                </div>
+                <div class="pic" data-index = '5'>
+                    <img class="img" src="./family-images/Family006.jpeg" alt="" data-index = '5'>
+                    <div class="imgIcon" data-index = '5'>
+                        <img src="https://cdn.prod.website-files.com/60675f13ea324fdd4af9ef2a/607dbd26c4818812ab5d87f7_View.svg"
+                            alt="" data-index = '5'>
+                        <p data-index = '5'>CLICK</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper---大的轮播图 -->
+            <div class="swiper mySwipers" id="bigSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./family-images/Family001.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./family-images/Family002.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./family-images/Family003.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./family-images/Family004.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./family-images/Family005.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./family-images/Family006.jpeg" alt=""></div>
+        
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination1"></div>
+                <div class="close" id="closeSwiper">
+                    <img src="./family-images/closeWhite.png" alt="">
                 </div>
             </div>
         </section>
@@ -1075,6 +1073,9 @@
     <script src="./js/section-7.js"></script>
     <script src="./js/section-8.js"></script>
     <script src="./js/swiper.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      
 </body>
 </html>

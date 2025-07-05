@@ -159,7 +159,7 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s;
-    z-index: 300px;
+    z-index: 300;
     position: absolute;
     border: 1px solid lightgray;
     bottom:-38px;
@@ -179,7 +179,7 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s;
-    z-index: 300px;
+    z-index: 300;
     position: absolute;
     bottom:-38px;
     right:43%;
