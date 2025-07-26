@@ -1,0 +1,151 @@
+/* Journal 3 Styles */
+.journal-3-no-padding {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -450px;
+}
+
+.journal-3-grid-wrapper {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 650px; /* Ensure the section has enough height to display the background */
+}
+
+/* Background and Overlay */
+.journal-3-grey-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.journal-3-paralax-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../image/607dcd2961c3e396968aac28_031.jpeg'); /* Placeholder tropical image */
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 24px, 0px) scale3d(1.05, 1.05, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); /* Moved from inline style */
+}
+
+.journal-3-overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    z-index: 1;
+}
+
+/* Section Intro */
+.journal-3-intro {
+    height: 243px;
+    width: 1000px;
+    position: relative;
+    z-index: 2; /* Ensure content is above the background and overlay */
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.journal-3-promise-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Subtitle */
+.journal-3-subtitle-wrapper {
+    margin-bottom: 10px;
+}
+
+.journal-3-subtitle{
+     font-size: 11px;
+     letter-spacing: 5px;
+}
+
+.journal-3-subtitle-2 {
+    display: block;
+    width: 800px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #e6e6f3; /* Light color for subtitle */
+}
+
+/* Heading */
+.journal-3-promise-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0;
+}
+
+/* Buttons */
+.journal-3-dual-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.journal-3-button-white {
+    height: 54px;
+    width: 178px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #081c3a;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.journal-3-button-white:hover {
+    background-color: #e6e6f3;
+    color: #081c3a;
+    transform: scale(1.05);
+}
+
+.journal-3-outline-button-white {
+    height: 54px;
+    width: 178px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    border: 1px solid #c3c3c3;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.journal-3-outline-button-white:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+

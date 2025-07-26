@@ -161,7 +161,7 @@
     justify-content:center;
     align-items: center;
     background-color: #fff;
-    background-image: url('../../image/607b6ec5eba5a81fd8c62ddd_031.jpeg');
+    background-image: url('../../image/Travel004.jpg');
     background-size: cover;
     background-position:50%;
     background-repeat: no-repeat;
@@ -183,9 +183,10 @@
 }
 
 
-.home-hero-content {
+.home-hero-content-2 {
+    padding-right:180px;
     height: 620px;
-    width: 1400px;
+    width: 1200px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -208,7 +209,7 @@
     align-items: center;
 }
 
-.home-hero-title-subtitle {
+.home-hero-title-subtitle-1 {
     display: block;
     width: 800px;
     height: 20px;
@@ -219,9 +220,12 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-left: -200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home-hero-title-heading {
+.home-hero-title-heading-1 {
     color: white;
     display: block;
     height: 150px;
@@ -230,6 +234,9 @@
     font-family: sans-serif;
     font-weight: 600;
     margin-top: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home-hero-title-button {
@@ -1067,7 +1074,7 @@
     display: flex;
     justify-content:flex-end;
     position: relative;
-    z-index: 100;
+    z-index: 1000;
 }
 .popular-location-wrapper {
     align-self: flex-end;
