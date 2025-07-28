@@ -147,12 +147,15 @@
     color: rgb(8, 28, 58);
 }
 
-.section-9-team-name {
+.section-9-team-name-1 {
+    margin-top: 10px;
     font-size: 22px;
     display: flex;
     flex-direction: column;
     color: rgb(8, 28, 58);
     line-height: 22px;
+    gap:10px;
+    margin-bottom: -30px;
 }
 
 
