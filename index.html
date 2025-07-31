@@ -79,6 +79,7 @@
             left: 0;
             background-color: rgba(0, 0, 0, 0.9);
             display: none;
+            z-index: 100000 !important;
         }
 
         .swiper-wrapper {
@@ -86,6 +87,7 @@
             height: 88%;
             margin: auto;
             /* background-color: antiquewhite; */
+           
         }
 
         .swiper-wrapper .swiper-slide {
@@ -95,17 +97,20 @@
             justify-content: center;
             align-items: center;
             /* background-color: aqua; */
+          
         }
 
         .swiper-slide img {
             width: 50%;
             /* height: 80%; */
             /* object-fit: cover; */
+         
         }
 
         .swiper-pagination-clickable {
             display: flex;
             justify-content: center;
+          
         }
 
         /* 根据swiper官网的代码格式，选中下面的小圆点，改成正方形 */
@@ -119,6 +124,7 @@
             color: rgba(0, 0, 0, 0);
             opacity: 1;
             background: rgba(0, 0, 0, 0.2);
+           
         }
 
         .swiper-pagination-bullet-active {
@@ -181,6 +187,24 @@
             </div>
             <div class="preloader-top"></div>
             <div class="preloader-bottom"></div>
+        </div>
+    </div>
+
+    <div class="swiper mySwipers" id="bigSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./family-images/Family001.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./family-images/Family002.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./family-images/Family003.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./family-images/Family004.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./family-images/Family005.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="./family-images/Family006.jpeg" alt=""></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination1"></div>
+        <div class="close" id="closeSwiper">
+            <img src="./family-images/closeWhite.png" alt="">
         </div>
     </div>
 
@@ -980,7 +1004,7 @@
                 </div>
             </div>
             <!-- Swiper---大的轮播图 -->
-            <div class="swiper mySwipers" id="bigSwiper">
+            <!-- <div class="swiper mySwipers" id="bigSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./family-images/Family001.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="./family-images/Family002.jpeg" alt=""></div>
@@ -996,7 +1020,7 @@
                 <div class="close" id="closeSwiper">
                     <img src="./family-images/closeWhite.png" alt="">
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="section-9-no-padding">
